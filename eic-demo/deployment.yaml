@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: einfchips-welcome-page
-        image: rajaram0203/einfchips-welcome-page:0.3
+        image: rajaram0203/einfchips-welcome-page:0.5
         ports:
         - containerPort: 80
