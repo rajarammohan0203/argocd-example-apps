@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: einfchips-welcome-page
+  labels:
+    app: einfchips-welcome-page
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: einfchips-welcome-page
+  template:
+    metadata:
+      labels:
+        app: einfchips-welcome-page
+    spec:
+      containers:
+      - name: einfchips-welcome-page
+        image: rajaram0203/einfchips-welcome-page:0.1
+        ports:
+        - containerPort: 80
